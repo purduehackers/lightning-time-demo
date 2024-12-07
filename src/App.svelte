@@ -30,12 +30,41 @@
   setInterval(updateTime, 10);
 </script>
 
-<div style:background-image={`linear-gradient(${window.innerWidth < 640 ? '180deg' : '90deg'}, rgb(${bolts * 16 + zaps}, 161, 0), rgb(50, ${zaps * 16 + sparks}, 214), rgb(246, 113, ${sparks * 16 + charges}))`}>
-  <h1>{timeString}</h1>
+<div class="outer-container">
+    <div class="inner-container">
+        <div class="content" style:background-image={`linear-gradient(${window.innerWidth < 640 ? '180deg' : '90deg'}, rgb(${bolts * 16 + zaps}, 161, 0), rgb(50, ${zaps * 16 + sparks}, 214), rgb(246, 113, ${sparks * 16 + charges}))`}>
+        <h1>{timeString}</h1>
+        </div>
+    </div>
 </div>
 
 <style>
-  div {
+  /* div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-variant-numeric: tabular-nums;
+  } */
+  .outer-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .inner-container {
+    width: 81.95%;
+    height: 84.8%;
+    position: relative;
+  }
+
+  .content {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -44,6 +73,7 @@
     align-items: center;
     font-variant-numeric: tabular-nums;
   }
+
   h1 {
     font-size: 6rem;
     line-height: 1.1;
