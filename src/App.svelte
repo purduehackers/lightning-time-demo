@@ -61,7 +61,7 @@
 
   .inner-container {
     width: 81.95vw;
-    height: 44.9403vw;
+    height: 45.0403vw;
     position: relative;
   }
 
