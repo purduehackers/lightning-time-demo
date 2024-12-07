@@ -49,6 +49,7 @@
     font-variant-numeric: tabular-nums;
   } */
   .outer-container {
+    cursor: none;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -59,8 +60,8 @@
   }
 
   .inner-container {
-    width: 81.95%;
-    height: 84.8%;
+    width: 81.95vw;
+    height: 44.9403vw;
     position: relative;
   }
 
