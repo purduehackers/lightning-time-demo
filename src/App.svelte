@@ -76,7 +76,7 @@
   }
 
   h1 {
-    font-size: 6rem;
+    font-size: 13vw;
     line-height: 1.1;
     font-family: 'Space Mono';
   }
